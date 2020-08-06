@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <WebView
+        android:id="@+id/webView"
+        android:layout_width="match_parent"
+        android:layout_height="284dp" />
+    <LinearLayout
+        android:background="#673AB7"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_marginRight="60dp"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/directionTextView"
+            android:text="S"
+            android:background="#ff22"
+            android:textSize="25dp"
+            />
+        <Button
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/reloadButton"
+            android:layout_marginRight="60dp"
+            android:text="Reload"
+            style="@style/Widget.AppCompat.Button.Colored"
+            />
+        <Button
+            android:id="@+id/clearButton"
+            android:text="Clear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/Widget.AppCompat.Button.Colored"
+
+            />
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:background="#673AB7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:background="#D4DFE8"
+            android:inputType="textMultiLine"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:id="@+id/debugEditText"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:background="#673AB7"
+
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/pwmTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PWM:0"
+            android:textColor="#FFFFFF"
+            />
+        <SeekBar
+            android:min="0"
+            android:max="250"
+            android:id="@+id/pwmSeekBar"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:background="#673AB7"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:textSize="10dp"
+            android:text=" UV "
+            />
+        <Switch
+            android:id="@+id/uvSwitch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+        <Button
+
+            android:layout_marginLeft="80dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/forwardButton"
+            android:text="Forward"
+            />
+        <Button
+
+
+            android:layout_marginLeft="50dp"
+            android:text="Stop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/stopButton"
+            />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:background="#673AB7"
+        android:paddingTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+
+            android:layout_marginLeft="70dp"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Left"
+            android:id="@+id/leftButton"
+            />
+
+        <Button
+
+            android:layout_marginLeft="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="BckWard"
+            android:id="@+id/backwardButton"
+            />
+
+        <Button
+
+            android:layout_marginLeft="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Right"
+            android:id="@+id/rightButton"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:background="#A27EE3"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+        <Button
+            android:text="Change IP"
+
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/changeIpButton"
+            />
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:id="@+id/ipAddressTextView"
+           android:text="192.168.0.100"
+           android:textColor="#FFFFFF"
+           />
+    </LinearLayout>
+
+
+
+
+
+    <LinearLayout
+        android:paddingTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+
+            android:background="#020005"
+            android:textColor="#FFFFFF"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Made by Aadeeb and Nafiz from CSE 17,MIST"
+            />
+
+    </LinearLayout>
+
+
+</LinearLayout>
